@@ -1,0 +1,12 @@
+﻿=== EXAMEN - CHATBOT RAG ===
+Étudiant: Takoi RIZGUI
+Date: 04/02/2026
+
+POUR TESTER (3 minutes):
+1. pip install -r requirements.txt
+2. python -m helpers.init_data
+3. uvicorn main:app --reload
+4. Ouvrir: http://localhost:8000/docs
+
+Dataset inclus dans data/.
+Test rapide: python test_api.py

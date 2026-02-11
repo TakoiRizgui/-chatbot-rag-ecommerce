@@ -1,0 +1,14 @@
+﻿services:
+  fastapi-app:
+    build: .
+    container_name: chatbot-rag-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persistance ChromaDB
+      - ./data/chroma_langchain_db:/app/data/chroma_langchain_db
+      # Dataset
+      - ./data/ecommerce_faq_dataset.csv:/app/data/ecommerce_faq_dataset.csv
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

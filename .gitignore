@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+*.log
+
+# ChromaDB database
+data/chroma_langchain_db/
+
+# Variables d'environnement
+.env
+
+# Dataset (trop gros)
+*.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
